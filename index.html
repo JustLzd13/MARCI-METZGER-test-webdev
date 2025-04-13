@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marci Metzger Homes</title>
+  <!-- Google Fonts: Montserrat and Lora -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <button class="close-btn" onclick="toggleSidebar()">×</button>
+  <ul>
+    <li>Home</li>
+    <li>Listings</li>
+    <li>Let's Move</li>
+    <li>About Us</li>
+  </ul>
+</div>
+
+<!-- Header -->
+<header>
+  <button class="hamburger" onclick="toggleSidebar()">☰</button>
+  <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/blob-6c0c2e0.png/:/rs=w:536,h:167,cg:true,m/cr=w:536,h:167/qt=q:95" alt="Logo" class="navbar-logo">
+</header>
+
+<!-- V-shaped Triangle -->
+<div class="v-triangle"></div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <img src="https://lh3.googleusercontent.com/p/AF1QipPuy9KF67XaYF7y1SQpb__qeNnlpP3rlQzxRhg0=s680-w680-h510" alt="Hero Background">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>MARCI METZGER</h1>
+    <p>THE RIDGE REALTY GROUP<br>Serving Pahrump, NV</p>
+    <button class="call-btn">CALL NOW</button>
+
+    <!-- Social Icons (Centered below button) -->
+    <div class="social-icons">
+      <a href="#"><img src="https://img.icons8.com/?size=100&id=kQzCK4emnaD2&format=png&color=FFFFFF" alt="Facebook"></a>
+      <a href="#"><img src="https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=FFFFFF" alt="Instagram"></a>
+      <a href="#"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="LinkedIn"></a>
+      <a href="#"><img src="https://img.icons8.com/?size=100&id=38483&format=png&color=FFFFFF" alt="Yelp"></a>
+    </div>
+  </div>
+</section>
+
+<!-- Marci Profile Section -->
+<section class="marci-profile">
+
+  <!-- Marci text and image -->
+  <div class="marci-center">
+    <div class="marci-text">
+      <h2>Hi, I AM -- MARCI METZGER</h2>
+      <p>REALTOR FOR NEARLY 3 DECADES!<br>206-919-6886</p>
+      <div class="social-icons light">
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=kQzCK4emnaD2&format=png&color=000000" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=000000" alt="Instagram"></a>
+        <a href="#"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <img src="./images/b5.png" alt="Marci Metzger" class="marci-photo">
+  </div>
+
+ 
+</section>
+
+
+<!-- Sales Highlight Section -->
+<section class="sales-highlight">
+  <div class="sales-header">
+    <h1>Get it sold!</h1>
+  </div>
+
+  <!-- Block 1 -->
+  <div class="sales-content">
+    <div class="sales-image">
+      <img src="./images/c1.png" alt="Modern Kitchen">
+    </div>
+    <div class="sales-text">
+      <h2>Top Residential Sales Last 5 Years</h2>
+      <p>We helped nearly 90 clients in 2021, and closed <br>28.5 million in sales!<br><br>
+        Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.
+      </p>
+    </div>
+  </div>
+
+  <!-- Block 2 (Reverse layout) -->
+  <div class="sales-content" style="flex-direction: row-reverse;">
+    <div class="sales-image">
+      <img src="./images/c2.png" alt="Luxury Home">
+    </div>
+    <div class="sales-text">
+      <h2>Don't Just List It...</h2>
+      <p>Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+    </div>
+  </div>
+
+  <!-- Block 3 -->
+  <div class="sales-content">
+    <div class="sales-image">
+      <img src="./images/c3.png" alt="Key with House Charm">
+    </div>
+    <div class="sales-text">
+      <h2>Guide to Buyers</h2>
+      <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Search Section -->
+<section class="search-listings-wrapper">
+  <div class="search-box">
+    <h2>Search Listings</h2>
+    <form class="search-form">
+      <div class="row top-row">
+        <div class="form-group">
+          <label for="location">Location</label>
+          <select id="location">
+            <option>Any</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="type">Type</label>
+          <select id="type">
+            <option>Any</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sort">Sort By</label>
+          <select id="sort">
+            <option>Default</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row bottom-row">
+        <div class="form-group">
+          <label>Bedrooms</label>
+          <select>
+            <option>Any Number</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Baths</label>
+          <select>
+            <option>Any Number</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Min Price</label>
+          <input type="text" placeholder="$">
+        </div>
+        <div class="form-group">
+          <label>Max Price</label>
+          <input type="text" placeholder="$">
+        </div>
+        <div class="form-group">
+          <button type="submit" disabled>Search Now</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="photo-gallery">
+  <h2>PHOTO GALLERY</h2>
+  <div class="carousel-container">
+    <div class="main-image">
+      <img id="featured-image" src="./images/ecarousel/e1.png" alt="Featured Image">
+    </div>
+    <div class="arrow left" id="prev-btn">&#10094;</div>
+    <div class="arrow right" id="next-btn">&#10095;</div>
+    <div class="thumbnail-row">
+      <img src="./images/ecarousel/e1.png" alt="Thumb 1">
+      <img src="./images/ecarousel/e2.png" alt="Thumb 2">
+      <img src="./images/ecarousel/e3.png" alt="Thumb 3">
+      <img src="./images/ecarousel/e4.png" alt="Thumb 4">
+      <img src="./images/ecarousel/e5.png" alt="Thumb 5">
+      <img src="./images/ecarousel/e6.png" alt="Thumb 6">
+      <img src="./images/ecarousel/e7.png" alt="Thumb 7">
+    </div>
+  </div>
+</section>
+
+
+<section class="services-section">
+  <h2 class="services-title">OUR SERVICES</h2>
+
+  <div class="services-grid">
+    <!-- Card 1 -->
+    <div class="service-card">
+      <img src="./images/oursevices/f1.png" alt="Real Estate Done Right" />
+      <h3>Real Estate Done Right</h3>
+      <p>
+        Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="service-card">
+      <img src="./images/oursevices/f3.png" alt="Property Management Services" />
+      <h3>Property Management Services</h3>
+      <p>
+        Owning property is great—managing it can be tough. We handle everything from tenant screening and rent collection to maintenance and legal compliance. Let us manage the details while you enjoy stress-free ownership.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="service-card">
+      <img src="./images/oursevices/f2.png" alt="Commercial & Residential" />
+      <h3>Commercial & Residential</h3>
+      <p>
+        Large or small, condo or mansion, we can find it and get the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put your hard-earned dollars.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="brand-logos">
+  <div class="logos-container">
+    <!-- Left logos -->
+    <div class="logo-group">
+      <img src="./images/b1.png" alt="Logo 1">
+      <img src="./images/b2.png" alt="Logo 2">
+    </div>
+    <!-- Right logos -->
+    <div class="logo-group">
+      <img src="./images/b3.png" alt="Logo 3">
+      <img src="./images/b4.png" alt="Logo 4">
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section">
+  <h2 class="contact-heading">CALL OR VISIT</h2>
+
+  <div class="contact-content">
+    <!-- Left: Contact Form -->
+    <div class="contact-form">
+      <h3>Send Message</h3>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Send</button>
+        <p class="disclaimer">
+          This site is protected by reCAPTCHA and the Google
+          <a href="#">Privacy Policy</a> and
+          <a href="#">Terms of Service</a> apply.
+        </p>
+      </form>
+    </div>
+
+    <!-- Right: Info -->
+    <div class="contact-info">
+      <a href="https://wa.me/12069196886" class="whatsapp-btn" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" />
+        Message us on WhatsApp
+      </a>
+    
+      <!-- Contact Info -->
+      <div class="info-block">
+        <h4>Marci Metzger - THE RIDGE REALTY GROUP</h4>
+        <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+        <p class="phone">(206) 919-6886</p>
+      </div>
+    
+      <!-- Office Hours -->
+      <div class="info-block">
+        <h4>Office Hours</h4>
+        <p><strong>Open today:</strong> <span class="highlight">08:00 a.m. – 07:00 p.m.</span></p>
+        <p><strong>Open daily:</strong> 8:00 am - 7:00 pm</p>
+        <p>Appointments outside office hours available upon request. Just call!</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Google Maps Section -->
+<section class="map-section">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.2651770670293!2d-115.95782842364892!3d36.184253172437206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8e9dd3f7c71fb%3A0xb2d4a4d993f2e7a!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!5e0!3m2!1sen!2sus!4v1680831542337!5m2!1sen!2sus" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <div class="triangle-down"></div>
+</section>
+
+<!-- Footer Section -->
+<div class="triangle-up"></div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-yelp"></i></a>
+    </div>
+    <p>COPYRIGHT © 2023 MARCI METZGER HOMES - ALL RIGHTS RESERVED</p>
+    <div class="footer-divider"></div>
+  </div>
+</footer>
+
+
+<!-- FontAwesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+<script src="./script/script.js"></script>
+</body>
+</html>
