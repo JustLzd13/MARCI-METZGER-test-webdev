@@ -24,6 +24,7 @@ header {
 .navbar-logo {
   width: 400px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .hamburger {
@@ -32,6 +33,12 @@ header {
   background: none;
   border: none;
   z-index: 6;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    font-size: 20px; 
+  }
 }
 
 /* Sidebar */
